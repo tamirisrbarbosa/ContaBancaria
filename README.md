@@ -27,7 +27,7 @@ Este projeto foi desenvolvido como prática de orientação a objetos em Java. A
 └── README.md
 ```
 
-📌 O que cada classe faz:
+# 📌 O que cada classe faz:
 ContaBancaria.java: Classe abstrata base com atributos e métodos comuns às contas.
 
 ContaCorrente.java: Herda de ContaBancaria e aplica regras específicas para saque com taxa.
@@ -40,7 +40,7 @@ main.java: Onde tudo acontece — simulações de depósitos, saques e visualiza
 
 ---
 
-✅ Funcionalidades
+# ✅ Funcionalidades
 Criar contas corrente e poupança com número e titular.
 
 Realizar depósitos e saques.
@@ -51,7 +51,7 @@ Tratar saques com saldo insuficiente usando exceção personalizada.
 
 ---
 
-🚀 Como executar
+# 🚀 Como executar
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git 
@@ -69,12 +69,12 @@ java main
 
 ---
 
-👩‍💻 Sobre o projeto
+# 👩‍💻 Sobre o projeto
 Este projeto foi desenvolvido como parte das atividades da disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
 
 ---
 
-💁‍♀️ Sobre mim
+# 💁‍♀️ Sobre mim
 Oi! Eu sou a Iris (Tamiris Barbosa) e tô em transição de carreira pra área de desenvolvimento.
 
 Se quiser trocar ideia sobre programação ou tecnologia, bora conversar! 🤝
