@@ -1,67 +1,88 @@
-📌  PROJETO: SIMULAÇÃO DE CONTA BANCÁRIA
+# 💸 Projeto Banco em Java
 
-Este repositório contém uma implementação simples de um sistema bancário em Java, utilizando conceitos de Programação Orientada a Objetos (POO), como herança, polimorfismo e tratamento de exceções.
-O projeto faz parte dos meus estudos de Java na faculdade, neste semestre.
+Este projeto foi desenvolvido como prática de orientação a objetos em Java. A ideia foi criar uma estrutura simples de um sistema bancário com contas, exceções personalizadas e herança entre classes.
+
+---
+
+## 🧠 Conceitos aplicados
+
+- Programação orientada a objetos (POO)
+- Herança e polimorfismo
+- Exceções personalizadas (`SaldoInsuficienteException`)
+- Criação e manipulação de objetos
+- Encapsulamento de atributos
+- Princípios de reutilização de código
+
+---
+
+## 📁 Estrutura do projeto
+
+```bash
+.
+├── ContaBancaria.java
+├── ContaCorrente.java
+├── ContaPoupanca.java
+├── SaldoInsuficienteException.java
+├── main.java
+└── README.md
+```
+
+📌 O que cada classe faz:
+ContaBancaria.java: Classe abstrata base com atributos e métodos comuns às contas.
+
+ContaCorrente.java: Herda de ContaBancaria e aplica regras específicas para saque com taxa.
+
+ContaPoupanca.java: Também herda de ContaBancaria, mas segue regras diferentes (como ausência de taxa).
+
+SaldoInsuficienteException.java: Exceção personalizada para impedir saques indevidos.
+
+main.java: Onde tudo acontece — simulações de depósitos, saques e visualização de saldo.
+
+---
+
+✅ Funcionalidades
+Criar contas corrente e poupança com número e titular.
+
+Realizar depósitos e saques.
+
+Verificar saldo.
+
+Tratar saques com saldo insuficiente usando exceção personalizada.
+
+---
+
+🚀 Como executar
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git 
+```
+
+2. Compile os arquivos:
+```bash
+javac *.java
+```
+
+3. Execute:
+```bash
+java main
+```
+
+---
+
+👩‍💻 Sobre o projeto
+Este projeto foi desenvolvido como parte das atividades da disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
+
+---
+
+💁‍♀️ Sobre mim
+Oi! Eu sou a Iris (Tamiris Barbosa) e tô em transição de carreira pra área de desenvolvimento.
+
+Se quiser trocar ideia sobre programação ou tecnologia, bora conversar! 🤝
+
+🔗 [Meu LinkedIn](https://www.linkedin.com/in/tamirisrodriguesbarbosa)
+
+🐙 [Meu GitHub](https://github.com/tamirisrbarbosa)
 
 
 
-🛠️ TECNOLOGIAS UTILIZADAS
 
-- Java
-  
-- Programação Orientada a Objetos (POO)
-
-
-
-📜 DESCRIÇÃO
-
-O projeto simula operações bancárias básicas para contas correntes e contas poupança. As funcionalidades incluem:
-✔️ Depósito de valores
-✔️ Saque com verificação de saldo
-✔️ Tratamento de exceções para saldo insuficiente, identificando a conta afetada
-
-
-
-📂 ESTRUTURA DO CÓDIGO
-
-main.java → Classe principal que executa os testes das contas.
-
-ContaBancaria.java → Classe abstrata base para contas bancárias.
-
-ContaCorrente.java → Implementação de uma conta corrente.
-
-ContaPoupanca.java → Implementação de uma conta poupança com restrição de saldo mínimo.
-
-SaldoInsuficienteException.java → Exceção personalizada para saldo insuficiente.
-
-
-
-
-🚀 COMO EXECUTAR
-
-Clique no botão "<> Code" no GitHub e selecione "Download ZIP" para baixar o repositório.
-
-Extraia o arquivo ZIP em seu computador e abra a pasta extraída.
-
-
-
-📌 EXEMPLO DE SAÍDA
-
-Deposito de R$500 realizado com sucesso  
-Saque no valor de: 200 realizado com sucesso.  
-[Conta Corrente] Operação falhou devido a saldo insuficiente.
-Saque não permitido: saldo insuficiente.  
-Deposito de R$300 realizado com sucesso  
-Saque no valor de: 700 realizado com sucesso.  
-[Conta Poupança] Operação falhou devido a saldo insuficiente.
-Saque não permitido: Saldo mínimo de R$ 50,00 necessário!  
-
-
-
-📌 Melhorias Futuras
-
-Implementar taxas para saques em conta corrente.
-
-Adicionar um menu interativo para entrada do usuário.
-
-Criar testes unitários para validar as operações.
