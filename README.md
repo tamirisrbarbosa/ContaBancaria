@@ -74,7 +74,7 @@ Este projeto foi desenvolvido como parte das atividades da disciplina de Linguag
 ---
 
 ## 💁‍♀️ Sobre mim
-Oi! Eu sou a Iris (Tamiris Barbosa) e tô em transição de carreira pra área de desenvolvimento.
+Oi! Eu sou a Iris (Tamiris Barbosa) e estou em transição de carreira pra área de desenvolvimento.
 
 Se quiser trocar ideia sobre programação ou tecnologia, bora conversar! 🤝
 
