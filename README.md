@@ -50,24 +50,6 @@ Tratar saques com saldo insuficiente usando exceção personalizada.
 
 ---
 
-## 🚀 Como executar
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git 
-```
-
-2. Compile os arquivos:
-```bash
-javac *.java
-```
-
-3. Execute:
-```bash
-java main
-```
-
----
-
 ## 👩‍💻 Sobre o projeto
 Este projeto foi desenvolvido como parte das atividades da disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
 
