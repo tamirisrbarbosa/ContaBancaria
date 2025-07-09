@@ -4,20 +4,31 @@ Este projeto foi desenvolvido como prática de orientação a objetos em Java. A
 
 ---
 
-## 🧠 Conceitos aplicados
+## 📌 Funcionalidades
 
-- Programação orientada a objetos (POO)
-- Herança e polimorfismo
+- Criação de contas bancárias (corrente e poupança)
+- Depósitos e saques
+- Tratamento de exceção personalizada para saldo insuficiente
+- Encapsulamento e herança aplicados de forma prática
+
+---
+
+## 🛠️ Tecnologias e Conceitos Utilizados
+
+- **Java (JDK 8+)**
+- **Programação Orientada a Objetos**
+- Herança
+- Polimorfismo
+- Encapsulamento
 - Exceções personalizadas (`SaldoInsuficienteException`)
 - Criação e manipulação de objetos
-- Encapsulamento de atributos
 - Princípios de reutilização de código
+- Boas práticas de codificação
 
 ---
 
 ## 📁 Estrutura do projeto
-
-```bash
+```
 ├── ContaBancaria.java
 ├── ContaCorrente.java
 ├── ContaPoupanca.java
@@ -25,17 +36,18 @@ Este projeto foi desenvolvido como prática de orientação a objetos em Java. A
 ├── main.java
 └── README.md
 ```
+---
 
 ## 📌 O que cada classe faz:
-ContaBancaria.java: Classe abstrata base com atributos e métodos comuns às contas.
+`ContaBancaria.java`: Classe abstrata base com atributos e métodos comuns às contas.
 
-ContaCorrente.java: Herda de ContaBancaria e aplica regras específicas para saque com taxa.
+`ContaCorrente.java`: Herda de ContaBancaria e aplica regras específicas para saque com taxa.
 
-ContaPoupanca.java: Também herda de ContaBancaria, mas segue regras diferentes (como ausência de taxa).
+`ContaPoupanca.java`: Também herda de ContaBancaria, mas segue regras diferentes (como ausência de taxa).
 
-SaldoInsuficienteException.java: Exceção personalizada para impedir saques indevidos.
+`SaldoInsuficienteException.java`: Exceção personalizada para impedir saques indevidos.
 
-main.java: Onde tudo acontece — simulações de depósitos, saques e visualização de saldo.
+`main.java`: Onde tudo acontece — simulações de depósitos, saques e visualização de saldo.
 
 ---
 
@@ -50,8 +62,31 @@ Tratar saques com saldo insuficiente usando exceção personalizada.
 
 ---
 
+## 🧪 Como Executar o Projeto
+
+Siga os passos abaixo para compilar e executar a aplicação no terminal:
+
+### 1. Pré-requisitos
+
+- Java JDK 8 ou superior instalado
+- Terminal ou prompt de comando configurado
+
+### 2. Compilar os arquivos
+
+Abra o terminal na pasta do projeto e execute: 
+`javac *.java`
+
+Isso compilará todos os arquivos `.java` presentes no diretório.
+
+### 3. Executar o programa
+
+Após a compilação, rode o programa com: 
+`java main`
+
+---
+
 ## 👩‍💻 Sobre o projeto
-Este projeto foi desenvolvido como parte das atividades da disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
+Este projeto foi desenvolvido para a disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
 
 ---
 
