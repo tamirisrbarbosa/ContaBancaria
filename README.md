@@ -1,103 +1,106 @@
-# 💸 Projeto de Sistema Bancário em Java
+# 💸 Sistema Bancário Orientado a Objetos em Java
 
-Este projeto foi desenvolvido como prática de orientação a objetos em Java. A ideia foi criar uma estrutura simples de um sistema bancário com contas, exceções personalizadas e herança entre classes.
-
----
-
-## 📌 Funcionalidades
-
-- Criação de contas bancárias (corrente e poupança)
-- Depósitos e saques
-- Tratamento de exceção personalizada para saldo insuficiente
-- Encapsulamento e herança aplicados de forma prática
+Projeto desenvolvido como prática de Programação Orientada a Objetos (POO) utilizando Java. A aplicação simula um sistema bancário simples com suporte a contas corrente e poupança, operações básicas e tratamento de exceções personalizadas.
 
 ---
 
-## 🛠️ Tecnologias e Conceitos Utilizados
+## 🎯 Objetivos do Projeto
 
-- **Java (JDK 8+)**
-- **Programação Orientada a Objetos**
-- Herança
-- Polimorfismo
+- Aplicar conceitos de herança, encapsulamento e polimorfismo
+- Criar uma estrutura reutilizável e organizada para manipulação de contas
+- Trabalhar com exceções personalizadas (`SaldoInsuficienteException`)
+- Simular interações bancárias no terminal
+
+---
+
+## ⚙️ Tecnologias e Conceitos
+
+- Java 8+
+- Programação Orientada a Objetos (POO)
+- Herança e Polimorfismo
 - Encapsulamento
-- Exceções personalizadas (`SaldoInsuficienteException`)
-- Criação e manipulação de objetos
-- Princípios de reutilização de código
-- Boas práticas de codificação
+- Exceções personalizadas
+- Simulação via terminal
 
 ---
 
-## 📁 Estrutura do projeto
+## 🧠 Funcionalidades
+
+- Criar contas (corrente e poupança)
+- Realizar depósitos e saques
+- Verificar saldo atual
+- Tratar saques com saldo insuficiente com exceção específica
+- Simulação completa via terminal
+
+---
+
+## 📁 Estrutura de Arquivos
+
 ```
-├── ContaBancaria.java
-├── ContaCorrente.java
-├── ContaPoupanca.java
-├── SaldoInsuficienteException.java
-├── main.java
+📦 ContaBancaria/
+├── ContaBancaria.java # Classe abstrata base
+├── ContaCorrente.java # Implementa regra de taxa
+├── ContaPoupanca.java # Saque sem taxa
+├── SaldoInsuficienteException.java # Exceção personalizada
+├── main.java # Simulação das operações
 └── README.md
 ```
----
-
-## 📌 O que cada classe faz:
-`ContaBancaria.java`: Classe abstrata base com atributos e métodos comuns às contas.
-
-`ContaCorrente.java`: Herda de ContaBancaria e aplica regras específicas para saque com taxa.
-
-`ContaPoupanca.java`: Também herda de ContaBancaria, mas segue regras diferentes (como ausência de taxa).
-
-`SaldoInsuficienteException.java`: Exceção personalizada para impedir saques indevidos.
-
-`main.java`: Onde tudo acontece — simulações de depósitos, saques e visualização de saldo.
 
 ---
 
-## ✅ Funcionalidades
-Criar contas corrente e poupança com número e titular.
+## 🚀 Como Executar
 
-Realizar depósitos e saques.
+### Requisitos:
+- Java JDK 8 ou superior
+- Terminal ou prompt de comando
 
-Verificar saldo.
+### Passos:
 
-Tratar saques com saldo insuficiente usando exceção personalizada.
+```
+# Compile todos os arquivos
+javac *.java
+
+# Execute o programa
+java main
+
+```
+---
+
+## 🖼️ Demonstração
+
+<img width="643" height="131" alt="image" src="https://github.com/user-attachments/assets/41cb683b-8b94-460c-95af-1887c022c816" />
+
+
+### 🖥️ Simulação no terminal
+
+```
+Deposito de R$500.0 realizado com sucesso       ← Conta Poupança
+Saque de R$200.0 realizado com sucesso          ← Operação válida
+Saque não permitido: saldo insuficiente.        ← Lógica de exceção personalizada
+```
 
 ---
 
-## 🧪 Como Executar o Projeto
-
-Siga os passos abaixo para compilar e executar a aplicação no terminal:
-
-### 1. Pré-requisitos
-
-- Java JDK 8 ou superior instalado
-- Terminal ou prompt de comando configurado
-
-### 2. Compilar os arquivos
-
-Abra o terminal na pasta do projeto e execute: 
-`javac *.java`
-
-Isso compilará todos os arquivos `.java` presentes no diretório.
-
-### 3. Executar o programa
-
-Após a compilação, rode o programa com: 
-`java main`
-
----
-
-## 👩‍💻 Sobre o projeto
-Este projeto foi desenvolvido para a disciplina de Linguagem Orientada a Objetos, no curso de Análise e Desenvolvimento de Sistemas, no terceiro período.
+## 👩‍💻 Sobre o Projeto
+Este projeto foi desenvolvido para a disciplina de Linguagem Orientada a Objetos no curso de Análise e Desenvolvimento de Sistemas (3º período).
 
 ---
 
 ## 💁‍♀️ Sobre mim
-Oi! Eu sou a Iris (Tamiris Barbosa) e estou em transição de carreira pra área de desenvolvimento.
+Sou a Tamiris Barbosa, estudante de Análise e Desenvolvimento de Sistemas, com transição de carreira para área de desenvolvimento.
 
-Se quiser trocar ideia sobre programação ou tecnologia, bora conversar! 🤝
+🔗 [LinkedIn](https://www.linkedin.com/in/tamirisrodriguesbarbosa)  
+🐙 [GitHub](https://github.com/tamirisrbarbosa)
 
-🔗 [Meu LinkedIn](https://www.linkedin.com/in/tamirisrodriguesbarbosa)
+---
 
-🐙 [Meu GitHub](https://github.com/tamirisrbarbosa)
+## ✅ Melhorias futuras
+
+- Interface com entrada do usuário
+- Persistência de dados com arquivos ´.txt´ ou banco de dados
+- Testes unitários
+
+
 
 
 
